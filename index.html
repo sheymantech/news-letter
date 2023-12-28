@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>counter-project</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="row body-cont">
+        <div class="col-lg-8 col-sm-10 main-cont mx-auto">
+          <div class="row">
+            <div class="col-lg-6 order-last order-lg-first">
+              <div class="cont-wrapper my-auto ms-3 text-sm-center">
+                <h1>Stay Updated!</h1>
+                <h6>
+                  Join 60,000+ product managers receiving monthly updates on:
+                </h6>
+                <div class="updates mt-5">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <h6>Product discovery and building what matters</h6>
+                </div>
+                <div class="updates">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <h6>Measuring to ensure updates are a success</h6>
+                </div>
+                <div class="updates mb-5">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <h6>And much more!</h6>
+                </div>
+                <form>
+                  <div class="label-cont">
+                    <label>Email address</label>
+                    <label class="danger hidden" id="message"
+                      >valid email required</label
+                    >
+                  </div>
+                  <input
+                    type="email"
+                    placeholder="email@company.company"
+                    class="input-value"
+                  />
+                  <button type="submit" class="submit-btn" id="form">
+                    Subscribe to monthly newsletter
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-6 order-first order-lg-last edit-center">
+              <img
+                src="images/illustration-sign-up-desktop.svg"
+                class="img-desktop"
+                alt=""
+              />
+              <img
+                src="images/illustration-sign-up-mobile.svg"
+                class="img-mobile"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="body-success hidden-success">
+        <div class="success-wrapper">
+          <i class="bi bi-check-circle-fill"></i>
+
+          <h1>Thanks For subscribing!</h1>
+          <p>
+            A confirmation email has been sent to
+            <span class="email-span">ash@loremcompany.com</span>. Please open it
+            and click the button inside to confirm your subscription.
+          </p>
+          <button class="dismiss dismiss-btn">dismiss message</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
